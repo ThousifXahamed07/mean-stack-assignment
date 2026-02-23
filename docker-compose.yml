@@ -26,6 +26,7 @@ services:
 
   # Backend Node.js/Express Service
   backend:
+    image: thousif07/mean-backend:latest
     build:
       context: ./backend
       dockerfile: Dockerfile
@@ -55,6 +56,7 @@ services:
 
   # Frontend Angular Service
   frontend:
+    image: thousif07/mean-frontend:latest
     build:
       context: ./frontend
       dockerfile: Dockerfile
