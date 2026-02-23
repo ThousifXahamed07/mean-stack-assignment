@@ -27,9 +27,6 @@ services:
   # Backend Node.js/Express Service
   backend:
     image: thousif07/mean-backend:latest
-    build:
-      context: ./backend
-      dockerfile: Dockerfile
     container_name: mean-backend
     restart: unless-stopped
     environment:
@@ -57,9 +54,6 @@ services:
   # Frontend Angular Service
   frontend:
     image: thousif07/mean-frontend:latest
-    build:
-      context: ./frontend
-      dockerfile: Dockerfile
     container_name: mean-frontend
     restart: unless-stopped
     ports:
