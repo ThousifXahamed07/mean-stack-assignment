@@ -22,14 +22,16 @@ jobs:
         with:
           context: ./backend
           push: true
-          tags: ${{ secrets.DOCKER_USER }}/mean-backend:latest
+          # Hardcoded username to ensure valid reference format
+          tags: thousif07/mean-backend:latest
 
       - name: Build and Push Frontend
         uses: docker/build-push-action@v5
         with:
           context: ./frontend
           push: true
-          tags: ${{ secrets.DOCKER_USER }}/mean-frontend:latest
+          # Hardcoded username to ensure valid reference format
+          tags: thousif07/mean-frontend:latest
 
   deploy:
     needs: build-and-push
