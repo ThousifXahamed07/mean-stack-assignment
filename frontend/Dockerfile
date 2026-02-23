@@ -13,8 +13,8 @@ RUN npm install
 # Copy application source code
 COPY . .
 
-# Build the Angular app for production
-RUN npm run build --prod
+# Build the Angular app - replaced 'npm run build --prod' with the direct CLI command
+RUN npx -p @angular/cli ng build --configuration production
 
 # Stage 2: Serve with Nginx
 FROM nginx:alpine
