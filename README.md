@@ -340,25 +340,6 @@ echo $DB_NAME
 
 ---
 
-## 📸 Submission Checklist
-
-- [x] Docker Compose orchestration configured
-- [x] Multi-stage Dockerfiles for frontend and backend
-- [x] Nginx reverse proxy setup
-- [x] MongoDB persistent volumes
-- [x] GitHub Actions CI/CD pipeline
-- [x] Deployed to AWS EC2 (http://51.20.74.176)
-- [ ] **Screenshot of successful GitHub Actions workflow**
-- [ ] **Verification of MongoDB data persistence**
-
-### One Final Step
-
-Once your **GitHub Action** turns green, take a screenshot of the **"Actions"** tab showing the successful pipeline and add it to your submission folder. It proves the automation works!
-
-**Would you like me to help you verify if the tutorial data is correctly saving to the MongoDB volume on your VM?**
-
----
-
 ## 📄 License
 
 This project is for educational purposes as part of a DevOps assignment.
