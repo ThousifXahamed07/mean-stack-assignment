@@ -340,6 +340,58 @@ echo $DB_NAME
 
 ---
 
+## 📸 Project Screenshots
+
+This section demonstrates the complete infrastructure, CI/CD pipeline, and live deployment of the MEAN stack application.
+
+### 1. Infrastructure & Code Configuration
+
+#### Project Structure
+![Project Structure](./screenshots/infrastructure_project_structure.png)
+*Organized folder structure including `.github/workflows`, `nginx`, `frontend`, and `backend` directories with Docker configurations.*
+
+#### Nginx Reverse Proxy Configuration
+![Nginx Reverse Proxy Configuration](./screenshots/nginx_reverse_proxy_config.png)
+*The `default.conf` file showing the `/api/` location block and CORS headers for proper request routing.*
+
+#### Angular Production Environment
+![Angular Production Environment](./screenshots/angular_production_environment.png)
+*Production environment configuration with the relative `apiUrl: '/api'` path for seamless API communication.*
+
+---
+
+### 2. CI/CD & Automation
+
+#### GitHub Actions Workflow Definition
+![GitHub Actions Workflow Definition](./screenshots/github_actions_workflow_definition.png)
+*The `deploy.yml` file showcasing automated Build, Push, and Deploy stages.*
+
+#### CI/CD Pipeline Success
+![CI/CD Pipeline Success](./screenshots/cicd_pipeline_success.png)
+*GitHub Actions dashboard displaying a successful pipeline execution with green checkmark on the main branch.*
+
+#### Docker Hub Pushed Images
+![Docker Hub Repositories](./screenshots/docker_hub_pushed_images.png)
+*Docker Hub repositories showing the uploaded `thousif07/mean-frontend` and `thousif07/mean-backend` images with recent timestamps.*
+
+---
+
+### 3. Live Deployment & Functionality
+
+#### AWS VM Container Status
+![AWS Live Container Status](./screenshots/aws_live_container_status.png)
+*Terminal output of `docker ps` on AWS EC2 instance showing all 4 containers (MongoDB, Backend, Frontend, Nginx) running in "Up" status.*
+
+#### Working Application UI
+![Live Application UI](./screenshots/live_app_ui_overview.png)
+*The main Tutorials List page accessible at `http://51.20.74.176` displaying the functional Angular application.*
+
+#### Successful CRUD Operation
+![API CRUD Network Success](./screenshots/api_crud_network_success.png)
+*Browser's Network Tab showing a successful **201 Created** response for the `POST /api/tutorials` request, confirming full-stack connectivity.*
+
+---
+
 ## 📄 License
 
 This project is for educational purposes as part of a DevOps assignment.
