@@ -2,6 +2,12 @@
 
 This is a production-ready MEAN (MongoDB, Express, Angular, Node.js) stack application, fully containerized with Docker and deployed via an automated CI/CD pipeline.
 
+## 🌐 Live Application
+
+**Deployed Application:** **[http://51.20.74.176](http://51.20.74.176)**
+
+---
+
 ## 🚀 Infrastructure Overview
 
 * **Frontend**: Angular 15+ served via Nginx (Multi-stage Docker build).
@@ -56,12 +62,6 @@ The deployment is fully automated. Every push to the `main` branch triggers:
 * `DOCKER_USER`, `DOCKER_PASS`: Docker Hub credentials.
 * `VM_IP`: Public IP of the EC2 instance (`51.20.74.176`).
 * `SSH_PRIVATE_KEY`: Content of the `.pem` file for VM access.
-
----
-
-## 🔗 Live Application
-
-The live application is accessible at: **[http://51.20.74.176](http://51.20.74.176)**
 
 ---
 
